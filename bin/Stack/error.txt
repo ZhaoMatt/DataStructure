@@ -1,0 +1,14 @@
+Exception in thread "main" java.lang.NullPointerException:
+这个异常都是因为调用null对象的方法 , ,就是一个对象还没有没有正常初始化 就先调用它的方法
+
+比如 Object obj=null;    obj.toString();  这就会抛出 这个异常 
+
+当然我们不会这么去调用的,在程序出现这个异常,都是因为,逻辑有问题,导致对象没有正常初始化
+
+抛出异常后,一般会输出异常信息,,
+
+从上往下找 ,第一次出现与"自己的代码"有关的部分,就是异常抛出的最近点,异常就是在那里开始的
+
+然后再顺藤摸瓜 找问题去吧
+
+Stack DEFINE的时候top=null而不是top=new node<T>(); 不需要对象
