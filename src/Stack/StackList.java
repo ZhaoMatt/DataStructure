@@ -28,7 +28,7 @@ public class StackList<T> implements Stack<T>{
 			return;
 		Node<T> p = new Node<T>(x, top);
 		top = p;
-		System.out.println(top.data);
+//		System.out.println(top.data);
 		size++;
 		
 	}
@@ -42,7 +42,7 @@ public class StackList<T> implements Stack<T>{
 		}
 		top = top.next;
 		size--;
-		System.out.println(x.toString());
+//		System.out.println(x.toString());
 		return x;
 	}
 	@Override
@@ -59,7 +59,7 @@ public class StackList<T> implements Stack<T>{
         //Node<T> p =this.top.next; 
         while(top!=null)
         {
-        	System.out.println(top.data);
+        	System.out.println(top.data.toString());
         	
         	str +=top.data.toString();
         	if(top.next != null)

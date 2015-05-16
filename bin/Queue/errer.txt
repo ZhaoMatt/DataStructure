@@ -1,0 +1,3 @@
+when dequeue:
+if size <1:
+	throw new QueueEmptyException("错误:队列为空");
